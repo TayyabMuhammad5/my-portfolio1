@@ -19,13 +19,22 @@ const educationData = [
     degree: "Bachelor of Science in Computer Science", 
     institution: "FAST University, Islamabad", 
     cgpa: 3.56,
-    duration: "2021 - 2025", 
+    duration: "2023 - 2027", 
     description: "Relevant Coursework: Data Structures, Algorithms, Machine Learning, Object-Oriented Programming, and Software Engineering."
   }
 ];
 
 // --- Project Data ---
 const projects = [
+  {
+    id: 12,
+    category: "dev",
+    title: "Veloce: AI-Powered Agency Intake",
+    description: "An end-to-end agency intake platform. The Dev component features a highly interactive Next.js Kanban board, Prisma database schemas, and real-time updates via Server-Sent Events (SSE). The AI component utilizes a custom deterministic pipeline to automatically process and analyze incoming client briefs.",
+    tech: ["Next.js", "Prisma", "Node.js", "OpenAI API", "Redis"],
+    github: "https://github.com/TayyabMuhammad5/veloce",
+    live: "https://veloce-woad.vercel.app/" // <-- Update this placeholder with your actual live link
+  },
   {
     id: 1,
     category: "dev",
@@ -252,9 +261,10 @@ function App() {
 }
 
 // Reusable Component for Project Cards
+// Reusable Component for Project Cards
 function ProjectCard({ project }) {
   return (
-    <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-card">
+    <div className="project-card">
       <div className="card-content">
         <h4>{project.title}</h4>
         <p>{project.description}</p>
@@ -264,11 +274,21 @@ function ProjectCard({ project }) {
           ))}
         </div>
       </div>
+      
+      {/* Cleaned up footer: No more inline styles! */}
       <div className="card-footer">
-        <span>View Code &rarr;</span>
+        {project.github && (
+          <a href={project.github} target="_blank" rel="noopener noreferrer">
+            View Code &rarr;
+          </a>
+        )}
+        {project.live && (
+          <a href={project.live} target="_blank" rel="noopener noreferrer">
+            Live Demo &rarr;
+          </a>
+        )}
       </div>
-    </a>
+    </div>
   );
 }
-
 export default App;

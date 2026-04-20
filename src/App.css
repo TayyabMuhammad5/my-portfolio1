@@ -195,7 +195,7 @@ section {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid #334155;
   overflow: hidden;
-  text-align: left; /* Keep card text readable (left-aligned) */
+  text-align: left;
 }
 
 .project-card:hover {
@@ -218,20 +218,29 @@ section {
   border: 1px solid #334155;
 }
 
+/* --- UPDATED FOOTER STYLES FOR MULTIPLE LINKS --- */
 .card-footer {
   background-color: rgba(15, 23, 42, 0.5); 
   padding: 1rem 1.5rem;
   border-top: 1px solid #334155; 
-  color: var(--accent);
-  font-weight: 600; 
   display: flex; 
   justify-content: flex-end;
-  transition: all 0.3s ease;
+  gap: 1.5rem; /* Adds space between the 'View Code' and 'Live Demo' links */
 }
 
-.project-card:hover .card-footer { 
-  background-color: var(--accent); 
-  color: #ffffff; 
+/* Style the individual links inside the footer */
+.card-footer a {
+  color: var(--accent);
+  font-weight: 600; 
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+/* Make the specific link pop when hovered */
+.card-footer a:hover { 
+  color: #c084fc; /* Lighter purple on hover */
+  transform: translateX(3px); /* Slight animation to the right */
 }
 
 /* --- Contact Section --- */
