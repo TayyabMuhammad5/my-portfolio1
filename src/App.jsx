@@ -623,7 +623,7 @@ const skills = [
   {
     icon: "🌐",
     name: "Web / Backend",
-    tags: ["Node.js", "Express.js", "Next.js", "React", "Prisma ORM", "MySQL", "MongoDB", "REST APIs", "MERN Stack"],
+    tags: ["Node.js", "Fast API", "Express.js", "Next.js", "React", "Prisma ORM", "MySQL", "MongoDB", "REST APIs", "MERN Stack"],
     hot: ["Next.js", "Node.js"],
   },
   {
@@ -685,6 +685,13 @@ const mlProjects = [
     tech: ["PyTorch", "FCN", "ResNet-50", "Transfer Learning", "Computer Vision"],
     primary: "PyTorch",
     github: "https://github.com/TayyabMuhammad5/Weakly-Supervised-Remote-Sensing-Segmentation-using-Partial-Focal-Cross-Entropy-Loss-",
+  },
+   {
+    title: "Ultra-Low Latency AI Voice Agent",
+    description: "Full-duplex conversational AI agent achieving sub-800ms latency. Engineered a custom WebSocket streaming architecture utilizing asynchronous Python (FastAPI) and Next.js, integrating Deepgram STT/TTS and Groq LLMs. Optimized browser performance by bypassing main-thread bottlenecks with raw PCM audio chunk rendering.",
+    tech:["FastAPI", "Next.js", "WebSockets", "Deepgram", "Groq", "Web Audio API"],
+    primary: "FastAPI",
+    github: "https://github.com/TayyabMuhammad5/Voice-Agent",
   },
   {
     title: "RACE-RC: Intelligent Reading Comprehension System",
