@@ -767,6 +767,13 @@ const devProjects = [
     github: "https://veloce-woad.vercel.app/",
   },
   {
+    title: "WorldLens — Country Intelligence Dashboard",
+    description: "Built a single-page country explorer on the REST Countries API with multi-country comparison charts, region analytics, deep-linkable URL state, and CSV export, delivering capabilities no raw API browser can match.",
+    tech: ["JavaScript", "CSS3", "REST API", "Chart.js"],
+    primary: "REST API",
+    github: "https://github.com/tayyabMuhammad5/Worldlens",
+  },
+  {
     title: "Race Metrics Dashboard",
     description: "Java desktop application to track, analyze and visualize motorsport data including lap times, pit stops and tire strategies. Full F1 racing management system.",
     tech: ["Java", "JavaFX", "MySQL", "MVC"],
