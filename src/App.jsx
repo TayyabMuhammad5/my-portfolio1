@@ -680,6 +680,20 @@ const certifications = [
 
 const mlProjects = [
   {
+    title: "Veloce: AI-Powered Agency Intake System",
+    description: "Scalable agency intake platform with custom OpenAI integration using strict JSON schema enforcement to automatically parse and route complex multi-field client briefs into a structured database.",
+    tech: ["Next.js", "Prisma ORM", "Groq API", "MySQL"],
+    primary: "Next.js",
+    github: "https://veloce-woad.vercel.app/",
+  },
+   {
+    title: "AI Support Agent",
+    description: "Built an autonomous IT support triage agent using the Groq API (Llama 3.3) to automate initial ticket data-gathering. Designed a responsive Glassmorphism UI with Vanilla JavaScript that safely manages API credentials via local storage.",
+    tech: ["JavaScript", "Glassmorphism UI", "Grok API", "CSS"],
+    primary: "Grok API",
+    github: "https://ai-support-agent-hazel.vercel.app/",
+  },
+  {
     title: "Weakly Supervised Remote Sensing Segmentation",
     description: "Semantic segmentation framework for aerial imagery (Dubai dataset) using sparse point annotations. Custom pfCE loss achieved 15.7% mIoU with just 1 labeled pixel per class and 19.04% with 15 points — 38% loss reduction.",
     tech: ["PyTorch", "FCN", "ResNet-50", "Transfer Learning", "Computer Vision"],
@@ -759,20 +773,7 @@ const mlProjects = [
 ];
 
 const devProjects = [
-  {
-    title: "Veloce: AI-Powered Agency Intake System",
-    description: "Scalable agency intake platform with custom OpenAI integration using strict JSON schema enforcement to automatically parse and route complex multi-field client briefs into a structured database.",
-    tech: ["Next.js", "Prisma ORM", "OpenAI API", "MySQL"],
-    primary: "Next.js",
-    github: "https://veloce-woad.vercel.app/",
-  },
-   {
-    title: "AI Support Agent",
-    description: "Built an autonomous IT support triage agent using the Groq API (Llama 3.3) to automate initial ticket data-gathering. Designed a responsive Glassmorphism UI with Vanilla JavaScript that safely manages API credentials via local storage.",
-    tech: ["JavaScript", "Glassmorphism UI", "Grok API", "CSS"],
-    primary: "Grok API",
-    github: "https://ai-support-agent-hazel.vercel.app/",
-  },
+  
   {
     title: "WorldLens — Country Intelligence Dashboard",
     description: "Built a single-page country explorer on the REST Countries API with multi-country comparison charts, region analytics, deep-linkable URL state, and CSV export, delivering capabilities no raw API browser can match.",
