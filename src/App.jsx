@@ -766,6 +766,13 @@ const devProjects = [
     primary: "Next.js",
     github: "https://veloce-woad.vercel.app/",
   },
+   {
+    title: "AI Support Agent",
+    description: "Built an autonomous IT support triage agent using the Groq API (Llama 3.3) to automate initial ticket data-gathering. Designed a responsive Glassmorphism UI with Vanilla JavaScript that safely manages API credentials via local storage.",
+    tech: ["JavaScript", "Glassmorphism UI", "Grok API", "CSS"],
+    primary: "Grok API",
+    github: "https://ai-support-agent-hazel.vercel.app/",
+  },
   {
     title: "WorldLens — Country Intelligence Dashboard",
     description: "Built a single-page country explorer on the REST Countries API with multi-country comparison charts, region analytics, deep-linkable URL state, and CSV export, delivering capabilities no raw API browser can match.",
