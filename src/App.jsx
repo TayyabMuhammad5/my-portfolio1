@@ -681,7 +681,7 @@ const certifications = [
 const mlProjects = [
   {
     title: "Veloce: AI-Powered Agency Intake System",
-    description: "Scalable agency intake platform with custom OpenAI integration using strict JSON schema enforcement to automatically parse and route complex multi-field client briefs into a structured database.",
+    description: "Scalable agency intake platform with custom Groq integration using strict JSON schema enforcement to automatically parse and route complex multi-field client briefs into a structured database.",
     tech: ["Next.js", "Prisma ORM", "Groq API", "MySQL"],
     primary: "Next.js",
     github: "https://veloce-woad.vercel.app/",
